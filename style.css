@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* estilos header */
+header {
+    background-color: yellowgreen;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 200px;
+}
+
+header ul {
+    list-style: none;
+}
+
+header li {
+    background-color: teal;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* estilos main */
+main {
+    background-color: violet;
+    padding: 20px;
+}
+
+.sinopsis {
+    background-color: springgreen;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 30px;
+    /*41.16*/
+}
+.sinopsis img {
+    width: 200px;
+}
+
+.sinopsis h2 {
+    padding-bottom: 20px;
+}
+
+.sinopsis p {
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+.titulo-personajes {
+    text-align: center;
+    padding: 20px;
+    background-image: url("zombie.jpg");
+    /* eje Y y eje X*/
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.cont-personajes { 
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cont-personaje {
+    background-color: cornflowerblue;
+    padding: 20px;
+    width: 180px;
+    text-align: center;
+    border-radius: 10%;
+    background-image: url("FondoTarjeta.png");
+}
+/* 1h 00' */
+.cont-personaje img {
+    width: 100%;
+    border-radius: 40%;
+}
+
+.cont-personaje h3 {
+    padding-bottom: 10px;
+}
+
+.cont-personaje:hover {
+    background-image: url("FondoTarjetaCHover.png");   
+}
+
+.streaming {
+    background-color: thistle;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.streaming img {
+    width: 200px;
+}
+/* estilos footer*/
+footer {
+    background-color: steelblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+footer li {
+    background-color: wheat;
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 15px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    header, .sinopsis, .streaming, footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
